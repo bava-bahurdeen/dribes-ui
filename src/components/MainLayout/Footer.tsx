@@ -9,7 +9,7 @@ import { FooterData1, FooterData2, FooterData3, FooterData4 } from './data';
 const Footer: React.FC = () => {
   return (
     <footer className="mb-10 ">
-      <div className="flex lg:justify-around flex-col md:flex-row lg:items-center md:justify-center md:items-center md:gap-x-20 lg:gap-x-10 gap-y-10 flex-wrap xl:flex-nowrap container mx-auto ">
+      <div className="flex lg:justify-around flex-col md:flex-row lg:items-center md:justify-center md:items-center md:gap-x-20 lg:gap-x-10 gap-y-2 flex-wrap xl:flex-nowrap container mx-auto ">
         <ul>
           <li className="flex gap-x-2 items-center">
             <Image src={logo} alt="logo" className="w-10" />

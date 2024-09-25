@@ -313,7 +313,7 @@ const Home: React.FC = () => {
                 </div>
                 <input
                   type="time"
-                  className="xl:w-7/12 p-3 md:p-0 rounded-md bg-transparent border border-white "
+                  className="w-full xl:w-7/12 p-3 md:p-0 rounded-md bg-transparent border border-white "
                 />
               </div>
               <div className="flex flex-col gap-y-4 md:flex-row  gap-x-5">
@@ -328,7 +328,7 @@ const Home: React.FC = () => {
                 </div>
                 <input
                   type="time"
-                  className="md:w-7/12 p-3 md:p-0  rounded-md bg-transparent border border-white "
+                  className="w-full md:w-7/12 p-3 md:p-0  rounded-md bg-transparent border border-white "
                 />
               </div>
               <button
