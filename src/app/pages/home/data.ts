@@ -13,6 +13,7 @@ import car3 from '@/assets/Rent-car/car3.png';
 import minimal from '@/assets/about/minimal 1.png';
 import nissan from '@/assets/about/Nissan Versa 2013 1.png';
 import ford from '@/assets/about/ford escape 2007 1.png';
+import { StaticImageData } from 'next/image';
 
 interface WorksProps {
   id: number;
@@ -28,7 +29,7 @@ interface PopularProps {
 }
 interface RentalProps {
   id: number;
-  Img: any;
+  Img: StaticImageData;
   Icon1: IconType;
   Icon2: IconType;
   Icon3: IconType;
@@ -41,7 +42,7 @@ interface RentalProps {
 }
 interface AboutProps {
   id: number;
-  Img: any;
+  Img: StaticImageData;
   head: string;
   lead: string;
 }
