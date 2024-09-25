@@ -31,7 +31,7 @@ const Header:React.FC=()=>{
           
             </nav>
               {/* mobile menu */}
-              {Isopen && <ul className={`grid place-items-center gap-y-6 py-10 bg-box_color font-Lato text-lg  transition-all duration-300 cursor-pointer`}>
+              {Isopen && <ul className={`grid place-items-center gap-y-6 py-10 bg-box_color font-Lato text-lg   transition-all duration-300 cursor-pointer`}>
                {Headerdata.map(({id,name})=>{
 
                 return <li key={id} className='text-success hover:text-white hover:border-b-2 '>{name}</li>
