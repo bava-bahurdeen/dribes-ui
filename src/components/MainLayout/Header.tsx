@@ -53,7 +53,7 @@ const Header: React.FC = () => {
             return (
               <li
                 key={id}
-                className="text-success hover:text-white hover:border-b-2 "
+                className="text-white hover:border-b-2 "
               >
                 {name}
               </li>

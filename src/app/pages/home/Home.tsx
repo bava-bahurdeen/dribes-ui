@@ -28,21 +28,24 @@ const Home: React.FC = () => {
             and reviews from real users renta is the top-ranked car rental
             service company. If you are planning to rent a car you can trust us.
           </p>
-          <button className="bg-secondary text-white p-3 px-10 text-lg rounded font-semibold cursor-pointer">
+          <div className='grid md:block '>
+          <button className="bg-secondary text-white   p-3 px-10 text-lg rounded font-semibold cursor-pointer">
             Book a Car
           </button>
+
+          </div>
           <p className=" text-secondary font-semibold text-lg">
             Choose The Best Cars:
           </p>
           <ul className="flex xl:justify-center gap-x-7 items-center transition-all duration-100 cursor-pointer">
             <li className="hover:border-2 border-success p-2 px-4 rounded ">
-              <Image src={car2} alt="car-1" className="w-28  xl:w-full" />
+              <Image src={car2} alt="car-1" className="w-36  xl:w-full" />
             </li>
             <li className="hover:border-2 border-success p-2 px-4 rounded">
-              <Image src={car3} alt="car-2" className="w-28 xl:w-full" />
+              <Image src={car3} alt="car-2" className="w-36  xl:w-full" />
             </li>
             <li className="hover:border-2 border-success p-2 px-4 rounded">
-              <Image src={car1} alt="car-3" className="w-28 xl:w-full" />
+              <Image src={car1} alt="car-3" className="w-36  xl:w-full" />
             </li>
           </ul>
         </div>
