@@ -1,10 +1,10 @@
-import type { Config } from "tailwindcss";
+import type { Config } from 'tailwindcss';
 
 const config: Config = {
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     container: {
@@ -19,18 +19,17 @@ const config: Config = {
     },
     fontFamily: {
       Lato: ['Lato', 'sans-serif'],
-      Abril: ["Abril Fatface", 'serif'],
+      Abril: ['Abril Fatface', 'serif'],
       graphik: ['Graphik', 'sans-serif'],
-      Serif:['PT Serif', 'serif']
+      Serif: ['PT Serif', 'serif'],
     },
     extend: {
       colors: {
         primary: '#CCCEFF',
-        
-        secondary:'#181B68',
-        success:'#575757',
-        box_color:'#1A293E'
-     
+
+        secondary: '#181B68',
+        success: '#575757',
+        box_color: '#1A293E',
       },
     },
   },

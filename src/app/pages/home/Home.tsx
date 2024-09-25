@@ -1,19 +1,19 @@
-import Hero_car from "@/assets/hero/hero-car.png";
-import car1 from "@/assets/hero/car1.png";
-import car2 from "@/assets/hero/car2.png";
-import car3 from "@/assets/hero/car3.png";
-import Image from "next/image";
-import hundai from "@/assets/hero/hundai.png";
-import renult from "@/assets/hero/renult.png";
-import kia from "@/assets/hero/kia.png";
-import suzuki from "@/assets/hero/suzuki.png";
-import benz from "@/assets/hero/benz.png";
-import popular_car from "@/assets/hero/popular-car.png";
-import car_off from "@/assets/car_off_road.png";
-import text_bg from "@/assets/text-bg.png";
-import yellow_car from "@/assets/yellow_car.png";
-import "@/sass/index.scss";
-import { About, Popular, Rental, Workdata } from "@/app/pages/home/data";
+import Hero_car from '@/assets/hero/hero-car.png';
+import car1 from '@/assets/hero/car1.png';
+import car2 from '@/assets/hero/car2.png';
+import car3 from '@/assets/hero/car3.png';
+import Image from 'next/image';
+import hundai from '@/assets/hero/hundai.png';
+import renult from '@/assets/hero/renult.png';
+import kia from '@/assets/hero/kia.png';
+import suzuki from '@/assets/hero/suzuki.png';
+import benz from '@/assets/hero/benz.png';
+import popular_car from '@/assets/hero/popular-car.png';
+import car_off from '@/assets/car_off_road.png';
+import text_bg from '@/assets/text-bg.png';
+import yellow_car from '@/assets/yellow_car.png';
+import '@/sass/index.scss';
+import { About, Popular, Rental, Workdata } from '@/app/pages/home/data';
 
 const Home: React.FC = () => {
   return (
@@ -109,7 +109,7 @@ const Home: React.FC = () => {
         <div className="xl:relative">
           <Image src={popular_car} alt="popular-car" className="xl:w-10/12" />
           <div className="bg-[#FFF1F2] w-full h-[550px] absolute -top-10 -left-96 -z-50 hidden xl:block">
-            {" "}
+            {' '}
           </div>
         </div>
         <div className="space-y-4 grid md:place-items-center xl:place-items-start md:text-center xl:text-start">
@@ -117,9 +117,9 @@ const Home: React.FC = () => {
             Most Popular Cars
           </h2>
           <p className="text-success text-lg ">
-            {" "}
+            {' '}
             The majority have suffered altertoin in some from, injected humour,
-            Randomised words which don{"’"}t look in slightly believable.
+            Randomised words which don{'’'}t look in slightly believable.
           </p>
           <p className="text-lg">Hyundai Rspec-2024</p>
           <ul className="space-y-4">
@@ -165,7 +165,10 @@ const Home: React.FC = () => {
                 head,
               }) => {
                 return (
-                  <li className="flex flex-col justify-center items-start  gap-y-5 w-80 h-80 lg:w-96 lg:h-96 cursor-pointer  p-2 px-5  hover:bg-white hover:shadow-lg  rounded-lg bg-[#F9F9F9]">
+                  <li
+                    key={id}
+                    className="flex flex-col justify-center items-start  gap-y-5 w-80 h-80 lg:w-96 lg:h-96 cursor-pointer  p-2 px-5  hover:bg-white hover:shadow-lg  rounded-lg bg-[#F9F9F9]"
+                  >
                     <div className="grid place-items-center">
                       <Image
                         src={Img}
@@ -178,7 +181,7 @@ const Home: React.FC = () => {
                     </h2>
                     <div className="flex gap-x-4 ">
                       <p className="flex items-center lg:gap-x-2 text-success font-medium">
-                        {" "}
+                        {' '}
                         <Icon1 className="text-secondary" /> {door}
                       </p>
                       <p className="flex items-center lg:gap-x-2  text-success font-medium">
@@ -194,7 +197,7 @@ const Home: React.FC = () => {
                     </button>
                   </li>
                 );
-              }
+              },
             )}
           </ul>
         </div>
@@ -208,16 +211,16 @@ const Home: React.FC = () => {
 
           <p className="text-success text-xl xl:w-6/12">
             The majority have suffered altertoin in some from, by injected
-            humour, or randomised words which don{"’"}t look even slightly
-            believable.{" "}
+            humour, or randomised words which don{'’'}t look even slightly
+            believable.{' '}
           </p>
           <h2
             className="text-center text-5xl xl:text-8xl  font-extrabold bg-clip-text text-transparent"
             style={{
               backgroundImage: `url('${text_bg.src}')`,
-              backgroundPosition: "center",
-              backgroundSize: "center",
-              backgroundRepeat: "no-repeat",
+              backgroundPosition: 'center',
+              backgroundSize: 'center',
+              backgroundRepeat: 'no-repeat',
             }}
           >
             CAR OFF THE ROAD
@@ -266,7 +269,9 @@ const Home: React.FC = () => {
       </section>
       <section className="container mx-auto  mt-10 mb-10 lg:mt-20 lg:mb-20">
         <div className="bg-primary p-2 md:py-28  md:px-16 relative overflow-hidden">
-          <h2 className="text-secondary text-3xl text-center font-semibold mb-6 ">Contact Us</h2>
+          <h2 className="text-secondary text-3xl text-center font-semibold mb-6 ">
+            Contact Us
+          </h2>
           <div className="flex ">
             <form
               action=""
@@ -275,7 +280,9 @@ const Home: React.FC = () => {
               <h2 className="font-bold text-xl">Make Your Ride</h2>
               <p>Rent a car to mave form local hosts in 190+ countries.</p>
               <select className="w-full p-3 bg-transparent appearance-none border-white rounded-lg text-white text-xl font-semibold border px-4">
-                <option value="Select your Car type ">Select your Car type </option>
+                <option value="Select your Car type ">
+                  Select your Car type{' '}
+                </option>
                 <option value="car-2">car2</option>
                 <option value="car-3">car3</option>
               </select>
@@ -292,31 +299,50 @@ const Home: React.FC = () => {
                 <input className="w-10/12 p-2 rounded-r-md focus:outline-none border text-success bg-transparent" />
               </div>
               <div className="flex flex-col md:flex-row gap-y-4  gap-x-5">
-              <div className=" w-full flex ">
-                <span className="w-5/12 h-14 rounded-l-md bg-[#DCDDFF] text-success grid place-items-center text-lg">
-                  Pick-up
-                </span>
-                <input type="date"  className="w-10/12 p-2 rounded-r-md focus:outline-none border placeholder:text-white text-success bg-transparent" />
-              </div>
-               <input type="time" className="xl:w-7/12 p-3 md:p-0 rounded-md bg-transparent border border-white "/>
+                <div className=" w-full flex ">
+                  <span className="w-5/12 h-14 rounded-l-md bg-[#DCDDFF] text-success grid place-items-center text-lg">
+                    Pick-up
+                  </span>
+                  <input
+                    type="date"
+                    className="w-10/12 p-2 rounded-r-md focus:outline-none border placeholder:text-white text-success bg-transparent"
+                  />
+                </div>
+                <input
+                  type="time"
+                  className="xl:w-7/12 p-3 md:p-0 rounded-md bg-transparent border border-white "
+                />
               </div>
               <div className="flex flex-col gap-y-4 md:flex-row  gap-x-5">
-              <div className=" w-full flex  ">
-                <span className="w-5/12 h-14 rounded-l-md bg-[#DCDDFF] text-success grid place-items-center text-lg">
-                  Pick-up
-                </span>
-                <input type="date"   className="w-10/12  p-2 rounded-r-md focus:outline-none border placeholder:text-white text-success bg-transparent" />
+                <div className=" w-full flex  ">
+                  <span className="w-5/12 h-14 rounded-l-md bg-[#DCDDFF] text-success grid place-items-center text-lg">
+                    Pick-up
+                  </span>
+                  <input
+                    type="date"
+                    className="w-10/12  p-2 rounded-r-md focus:outline-none border placeholder:text-white text-success bg-transparent"
+                  />
+                </div>
+                <input
+                  type="time"
+                  className="md:w-7/12 p-3 md:p-0  rounded-md bg-transparent border border-white "
+                />
               </div>
-               <input type="time" className="md:w-7/12 p-3 md:p-0  rounded-md bg-transparent border border-white "/>
-              </div>
-              <button type="submit" className="bg-white w-full p-4 px-4 rounded-md md:text-xl text-secondary  font-semibold">CONTINUE CAR RESERVATION</button>
+              <button
+                type="submit"
+                className="bg-white w-full p-4 px-4 rounded-md md:text-xl text-secondary  font-semibold"
+              >
+                CONTINUE CAR RESERVATION
+              </button>
             </form>
 
-            <Image src={yellow_car} alt="yello-car" className="hidden xl:block w-7/12 object-contain  z-50 -mr-16" />
-
+            <Image
+              src={yellow_car}
+              alt="yello-car"
+              className="hidden xl:block w-7/12 object-contain  z-50 -mr-16"
+            />
           </div>
-            <div className="bg-[#FFEFB8] w-[800px] h-[850px] hidden xl:block rounded-full absolute top-0  -right-96 ">
-            </div>
+          <div className="bg-[#FFEFB8] w-[800px] h-[850px] hidden xl:block rounded-full absolute top-0  -right-96 "></div>
         </div>
       </section>
     </main>

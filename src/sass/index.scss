@@ -1,19 +1,18 @@
-input[type="date time"] {
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    -ms-appearance: none;
-    -o-appearance: none;
-  }
-  input[type="date"]::-webkit-calendar-picker-indicator {
-    display: none;
-  }
-  
-  input[type="date"]::-moz-calendar-picker-indicator {
-    display: none;
-  }
+input[type='date time'] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+}
+input[type='date']::-webkit-calendar-picker-indicator {
+  display: none;
+}
 
-  input[type="time"]::-webkit-calendar-picker-indicator {
-    display: none;
-  }
-  
+input[type='date']::-moz-calendar-picker-indicator {
+  display: none;
+}
+
+input[type='time']::-webkit-calendar-picker-indicator {
+  display: none;
+}
